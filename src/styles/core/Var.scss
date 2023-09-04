@@ -1,9 +1,17 @@
-/* COLOR
-Malva: #906aa4
-Azul: #6573af
-Naranja: #da9768
-Morado oscuro: #2e2857
-*/
+/* COLORS */
+$primary-clr: #2e2857;
+$scd-clr: #a72be9;
+//$scd-clr: #906aa4;
+$accent-clr: #d9610b;
+//$accent-clr: #da9768;
+$scd-accent-clr: #6573af;
+
 
 /* FONTS */
 $primary-font: 'IBM Plex Mono', monospace;
+
+/* SIZES */
+$title-mbl: 2.5rem;
+$title-tb: 3rem;
+$subtitle-mbl: 1.8rem;
+$subtitle-tb: 2rem;

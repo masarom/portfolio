@@ -1,0 +1,66 @@
+@import '../core/Var';
+
+.main {
+  &__hero {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../../images/hero4.png);
+    background-position: top;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    animation-name: introHero;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    @media all and (min-width: 768px) {
+        background-position: top left;
+        background-size: 360px;
+    }
+    &--text {
+      text-align: center;
+      color: $primary-clr;
+      transform: translateY(260px);
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      height: 350px;
+      @media all and (min-width: 768px){
+        transform: none;
+        margin-left: 355px;
+      }
+      & .title {
+        font-size: $title-mbl;
+        &--accent {
+          color: $accent-clr;
+        }
+      }
+      & .intro {
+        margin: 15px 0;
+        font-size: $subtitle-mbl;
+        &--accent {
+          color: $scd-clr;
+        }
+      }
+    }
+    &--desc {
+        font-size: 1.5rem;
+        margin-top: 15px;
+        &--link {
+          color: $scd-accent-clr;
+          &:hover {
+            color: $accent-clr;
+          }
+        }
+      }
+  }
+}
+
+@keyframes introHero {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
