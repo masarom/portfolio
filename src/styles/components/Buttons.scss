@@ -1,0 +1,11 @@
+@mixin transition($end-color, $start-color) {
+  background: linear-gradient(to right, $end-color 50%, $start-color 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: ease-out 0.5s;
+  &:hover {
+    color: $start-color;
+    background-position: left;
+    @content;
+  }
+}

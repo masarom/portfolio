@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/layout/MainHero.scss';
 
 const MainHero = () => {
@@ -13,7 +14,7 @@ const MainHero = () => {
         </h2>
       </div>
       <div className='main__hero--desc'>
-        <p>
+        <p className='paragraph'>
           Since 2022, I've been expanding my programming skills on my own with{' '}
           <a className='desc--link' href='https://www.freecodecamp.org/mariasanchez' target='_blank' rel='noreferrer'>
             freeCodeCamp
@@ -28,7 +29,16 @@ const MainHero = () => {
           </a>
           .
         </p>
-        <p>Check all my past and present projects below.</p>
+        <p className='paragraph'>Check all my past and present projects below.</p>
+      </div>
+        <hr className='line--through'/>
+      <div className='main__hero--projects'>
+        <a href='#projects' className='link'>
+          <p className='link__text'>
+            <span className='link__text--decoration'>{'# '}</span>Projects
+          </p>
+          <i className='fa-solid fa-chevron-down'></i>
+        </a>
       </div>
     </section>
   );
