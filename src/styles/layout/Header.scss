@@ -36,10 +36,10 @@
       font-size: $main-txt-mbl;
       & .item {
         &__contact {
-          color: $primary-clr;
+          color: $accent-clr;
           text-decoration: none;
           font-weight: 700;
-          padding: 3px 5px;
+          padding: 3px 3px;
           border-radius: 5px;
           @include transition($accent-clr, $dark-contrast) {
           }
@@ -48,8 +48,11 @@
           text-decoration: none;
           color: $scd-clr;
           font-weight: 700;
-          &:hover {
-            color: $accent-clr;
+          @media all and (min-width: 768px) {
+            padding: 3px 5px;
+            border-radius: 5px;
+            @include transition($scd-clr, $dark-contrast) {
+            }
           }
           &--text {
             display: none;
