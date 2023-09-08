@@ -1,4 +1,5 @@
 @import '../core/Var';
+/* TECH STACK ICONS */
 
 .main {
   &__hero {
@@ -30,7 +31,7 @@
       }
       & .title {
         font-size: $title-mbl;
-        
+
         &--accent {
           color: $accent-clr;
         }
@@ -70,6 +71,75 @@
         font-size: $main-txt-lg;
       }
     }
+    &--tech, &--learn {
+      margin: 25px 15px;
+      & .tech__title, .learn__title {
+        padding-bottom: 10px;
+        color: $primary-clr;
+        font-size: $subtitle-mbl;
+        font-weight: 700;
+        line-height: 1.5;
+        text-align: center;
+        cursor: pointer;
+        & span {
+          color: transparent;
+        }
+        &:hover {
+          color: $accent-clr;
+        }
+        &:hover span {
+          cursor: pointer;
+          color: $accent-clr;
+        }
+      }
+      & .container {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+      }
+      @each $name, $url in $stack-icons {
+        .tech__icon--#{$name} {
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+          background-image: url($url);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+      @each $name, $url in $learn-icons {
+        .learn__icon--#{$name} {
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+          background-image: url($url);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    & .technologies {
+      display: flex;
+      flex-flow: column nowrap;
+      @media all and (min-width: 768px){
+        flex-flow: row nowrap;
+      }
+    }
+    &--tech {
+      @media all and (min-width: 768px) {
+            width: 60%;
+          }
+    }
+    &--learn {
+      @media all and (min-width: 768px) {
+            width: 35%;
+          }
+    }
+
     &--projects {
       text-align: center;
       font-size: $subtitle-mbl;
@@ -83,7 +153,7 @@
           color: transparent;
           margin-left: -20px;
         }
-        &__text:hover  {
+        &__text:hover {
           color: $accent-clr;
         }
         &__text:hover span {

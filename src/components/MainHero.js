@@ -3,7 +3,7 @@ import '../styles/layout/MainHero.scss';
 const MainHero = () => {
   return (
     <section className='main__hero'>
-      <div className='main__hero--text'>
+      <section className='main__hero--text'>
         <h1 className='title'>
           <span className='title--accent'>Front-end developer</span> soon-to-be Full-Stack developer
         </h1>
@@ -11,8 +11,8 @@ const MainHero = () => {
           Welcome! I am <span className='intro--accent'>María Sánchez</span>, a passionate web developer based in Madrid
           (Spain).
         </h2>
-      </div>
-      <div className='main__hero--desc'>
+      </section>
+      <section className='main__hero--desc'>
         <p className='paragraph'>
           Since 2022, I've been expanding my programming skills on my own with{' '}
           <a className='desc--link' href='https://www.freecodecamp.org/mariasanchez' target='_blank' rel='noreferrer'>
@@ -28,17 +28,51 @@ const MainHero = () => {
           </a>
           .
         </p>
-        <p className='paragraph'>Check all my past and present projects below</p>
-      </div>
-        <hr className='line--through'/>
-      <div className='main__hero--projects'>
+        <p className='paragraph'>Check all my past and present projects below 🚀</p>
+      </section>
+      <section className="technologies">
+        <section className='main__hero--tech'>
+          <h2 className='tech__title'>
+            <span className='tech__title--decoration'>{'# '}</span>My Tech stack:
+          </h2>
+          <div className='container stack'>
+            <div className='tech__icon--1' title='Bootstrap'></div>
+            <div className='tech__icon--2' title='CSS3'></div>
+            <div className='tech__icon--3' title='express'></div>
+            <div className='tech__icon--4' title='Figma'></div>
+            <div className='tech__icon--5' title='Git'></div>
+            <div className='tech__icon--6' title='Gulp'></div>
+            <div className='tech__icon--7' title='HTML5'></div>
+            <div className='tech__icon--8' title='JavaScript ES6'></div>
+            <div className='tech__icon--9' title='Jest'></div>
+            <div className='tech__icon--10' title='React'></div>
+            <div className='tech__icon--11' title='Sass'></div>
+            <div className='tech__icon--12' title='MySql'></div>
+            <div className='tech__icon--13' title='NodeJS'></div>
+            <div className='tech__icon--14' title='Postman'></div>
+            <div className='tech__icon--15' title='mongoDB'></div>
+          </div>
+        </section>
+        <section className='main__hero--learn'>
+          <h2 className='learn__title'>
+            <span className='learn__title--decoration'>{'# '}</span>Currently improving:
+          </h2>
+          <div className='container learn'>
+            <div className='learn__icon--1' title='TypeScript'></div>
+            <div className='learn__icon--2' title='Jest'></div>
+            <div className='learn__icon--3' title='React'></div>
+          </div>
+        </section>
+      </section>
+      <hr className='line--through' />
+      <section className='main__hero--projects'>
         <a href='/projects' className='link'>
           <p className='link__text'>
             <span className='link__text--decoration'>{'# '}</span>Projects
           </p>
           <i className='fa-solid fa-chevron-down'></i>
         </a>
-      </div>
+      </section>
     </section>
   );
 };
