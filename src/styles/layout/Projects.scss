@@ -5,3 +5,13 @@
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap';
+
+.card__img {
+    width: 300px;
+    height: 300px;
+}
+
+.individual__projects {
+    max-height: 300px;
+    overflow-y: scroll;
+}

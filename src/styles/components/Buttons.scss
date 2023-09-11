@@ -1,4 +1,4 @@
-@mixin transition($end-color, $start-color) {
+/* @mixin transition($end-color, $start-color) {
   background: linear-gradient(to right, $end-color 50%, $start-color 50%);
   background-size: 200% 100%;
   background-position: right;
@@ -7,5 +7,48 @@
     color: $start-color;
     background-position: left;
     @content;
+  }
+}
+*/
+
+@mixin button-transition($end-color) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  line-height: 1;
+  text-decoration: none;
+  color: $end-color;
+  border-radius: 0px;
+  padding: 5px 5px;
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: $end-color;
+    transition: 0.3s;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &:hover::before {
+    transform: translateX(-100%);
+  }
+
+  &:hover::after {
+    transform: translateX(100%);
   }
 }
