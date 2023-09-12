@@ -12,7 +12,7 @@ const Header = () => {
           <ul className='header__menu--list'>
             <li className='item'>
               <NavLink className='item__contact' to={'/contact'}>
-                Contact me {' '}
+                Contact {' '}
                 <i className='item__icon fa-solid fa-envelope'></i>
               </NavLink>
             </li>

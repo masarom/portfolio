@@ -1,0 +1,25 @@
+// Override default variables before the import
+/* $body-bg: #000; */
+@import '../core/Var';
+@import '../core/Reset';
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap';
+
+.btn-custom {
+  background-color: $scd-accent-clr;
+  border-color: $scd-accent-clr;
+  color: $dark-contrast;
+  font-weight: 700;
+  margin: 5px;
+  font-size: $small-txt-mbl;
+  &:hover {
+    background-color: $accent-clr;
+  }
+  &-footer {
+    background-color: $scd-clr;
+    color: $dark-contrast;
+    margin-bottom: 5px;
+    font-size: $smaller-txt-mbl;
+  }
+}

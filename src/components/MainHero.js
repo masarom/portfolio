@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/layout/MainHero.scss';
 
 const MainHero = () => {
@@ -66,12 +67,12 @@ const MainHero = () => {
       </section>
       <hr className='line--through' />
       <section className='main__hero--projects'>
-        <a href='/projects' className='link'>
+        <Link to='/' className='link'>
           <p className='link__text'>
             <span className='link__text--decoration'>{'# '}</span>Projects
           </p>
           <i className='fa-solid fa-chevron-down'></i>
-        </a>
+        </Link>
       </section>
     </section>
   );
