@@ -1,0 +1,42 @@
+@import '../core/Var.scss';
+
+.footer {
+  height: 20vh;
+  background-color: $scd-accent-clr;
+  color: $dark-contrast;
+  padding: 20px;
+  &__menu {
+    &--list {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+      list-style-type: none;
+      color: $dark-contrast;
+      font-size: $small-txt-mbl;
+      & .item {
+        &__contact {
+          color: $dark-contrast;
+          text-decoration: none;
+          &:hover {
+            color: $primary-clr;
+            transition: 0.3s;
+          }
+        }
+        &__link {
+          text-decoration: none;
+          color: $dark-contrast;
+          &:hover {
+            color: $primary-clr;
+            transition: 0.3s;
+          }
+        }
+        &__icon {
+          font-size: $main-txt-lg;
+        }
+      }
+    }
+  }
+}

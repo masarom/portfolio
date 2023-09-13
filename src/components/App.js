@@ -3,7 +3,7 @@ import Main from './Main';
 import Contact from './Contact';
 import '../styles/App.scss';
 import { Route, Routes } from 'react-router-dom';
-import Projects from './Projects';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -14,13 +14,7 @@ function App() {
         <Route path='/projects' element={<Main />}></Route>
       </Routes>
       <Header />
-
-      <footer className='footer'>
-        <small>&copy;María Sánchez @masarom</small>
-        <small>
-          <a href='https://www.vecteezy.com/free-vector/web-developer'>Web Developer Vectors by Vecteezy</a>
-        </small>
-      </footer>
+      <Footer />
     </>
   );
 }

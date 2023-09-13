@@ -37,21 +37,21 @@ const MainHero = () => {
             <span className='tech__title--decoration'>{'# '}</span>My Tech stack:
           </h2>
           <div className='container stack'>
-            <div className='tech__icon--1' title='Bootstrap'></div>
+            <div className='tech__icon--1' title='HTML5'></div>
             <div className='tech__icon--2' title='CSS3'></div>
-            <div className='tech__icon--3' title='express'></div>
-            <div className='tech__icon--4' title='Figma'></div>
-            <div className='tech__icon--5' title='Git'></div>
-            <div className='tech__icon--6' title='Gulp'></div>
-            <div className='tech__icon--7' title='HTML5'></div>
-            <div className='tech__icon--8' title='JavaScript ES6'></div>
-            <div className='tech__icon--9' title='Jest'></div>
-            <div className='tech__icon--10' title='React'></div>
-            <div className='tech__icon--11' title='Sass'></div>
-            <div className='tech__icon--12' title='MySql'></div>
-            <div className='tech__icon--13' title='NodeJS'></div>
-            <div className='tech__icon--14' title='Postman'></div>
-            <div className='tech__icon--15' title='mongoDB'></div>
+            <div className='tech__icon--3' title='Sass'></div>
+            <div className='tech__icon--4' title='Git'></div>
+            <div className='tech__icon--5' title='Gulp'></div>
+            <div className='tech__icon--6' title='JavaScript ES6'></div>
+            <div className='tech__icon--7' title='React'></div>
+            <div className='tech__icon--8' title='Jest'></div>
+            <div className='tech__icon--9' title='Bootstrap'></div>
+            <div className='tech__icon--10' title='MySql'></div>
+            <div className='tech__icon--11' title='NodeJS'></div>
+            <div className='tech__icon--12' title='express'></div>
+            <div className='tech__icon--13' title='Postman'></div>
+            <div className='tech__icon--14' title='mongoDB'></div>
+            <div className='tech__icon--15' title='Figma'></div>
           </div>
         </section>
         <section className='main__hero--learn'>
