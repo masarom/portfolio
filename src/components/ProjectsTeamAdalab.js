@@ -10,7 +10,7 @@ import ImgTeam1 from '../images/projects/townsville-projects.png'
 
 const ProjectsTeamAdalab = () => {
   return (
-    <Container>
+    <Container id='team'>
       <h2 className='projects__title'>Adalab Bootcamp Team Projects</h2>
       <Row className='projects__team'>
         <Col xs={12} md={6} lg={4}>

@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import '../styles/layout/MainHero.scss';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const MainHero = () => {
   return (
@@ -29,7 +29,7 @@ const MainHero = () => {
           </a>
           .
         </p>
-        <p className='paragraph'>Check all my past and present projects below 🚀</p>
+        <p className='paragraph'>Check all my past and present projects <Link to='/#projects' className='paragraph--link'>below</Link> 🚀</p>
       </section>
       <section className="technologies">
         <section className='main__hero--tech'>
@@ -66,14 +66,6 @@ const MainHero = () => {
         </section>
       </section>
       <hr className='line--through' />
-      <section className='main__hero--projects'>
-        <Link to='/' className='link'>
-          <p className='link__text'>
-            <span className='link__text--decoration'>{'# '}</span>Projects
-          </p>
-          <i className='fa-solid fa-chevron-down'></i>
-        </Link>
-      </section>
     </section>
   );
 };

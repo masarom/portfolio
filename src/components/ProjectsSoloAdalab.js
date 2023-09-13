@@ -11,7 +11,7 @@ import ImgInd5 from '../images/projects/layout-gulp.png';
 
 const ProjectsAdalab = () => {
   return (
-    <Container>
+    <Container id='solo'>
       <h2 className='projects__title'>Adalab Bootcamp Solo Projects</h2>
       <Row className='projects__solo'>
         <Col xs={12} md={6} lg={4}>

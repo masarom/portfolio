@@ -8,14 +8,14 @@ import Projects from './Projects';
 function App() {
   return (
     <>
-    <Routes>
-      <Route path='/' element={<Main />}></Route>
-      <Route path='/contact' element={<Contact />}></Route>
-      {/* <Route path='/Projects' element={<Projects />}></Route> */}
-    </Routes>
+      <Routes>
+        <Route path='/' element={<Main />}></Route>
+        <Route path='/contact' element={<Contact />}></Route>
+        <Route path='/projects' element={<Main />}></Route>
+      </Routes>
       <Header />
-      
-      <footer className="footer">
+
+      <footer className='footer'>
         <small>&copy;María Sánchez @masarom</small>
         <small>
           <a href='https://www.vecteezy.com/free-vector/web-developer'>Web Developer Vectors by Vecteezy</a>
