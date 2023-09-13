@@ -4,16 +4,23 @@ import '../styles/layout/ProjectsCard.scss';
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-const ProjectsCard = ({ img, title, link, repo, footer }) => {
+const ProjectsCard = ({ img, title, desc, link, repo, footer }) => {
+  const footerTools =
+    footer.map((eachTool, i) => (
+        <Button key={i} size='sm' variant='custom-footer'>
+          {eachTool}
+        </Button>
+      ))
+  
   return (
-    <Card style={{ width: '26rem', margin: '5px auto' }}>
-      <Card.Img variant='top' src={img} style={{ maxWidth: '100%', height: 'auto' }} />
-      <Card.Body>
-        <Card.Title style={{ fontFamily: 'IBM Plex Mono', fontWeight: '700', fontSize: '1.8rem', color: '#d9610b' }}>
+    <Card style={{ width: '26rem', margin: '10px auto'}}>
+      <Card.Img variant='top' src={img} style={{ maxWidth: '100%', height: 'auto', minHeight:'250px'}} />
+      <Card.Body style={{minHeight:'210px'}}>
+        <Card.Title style={{ fontFamily: 'IBM Plex Mono', fontWeight: '700', fontSize: '1.8rem', color: '#d9610b', minHeight:'44px' }}>
           {title}
         </Card.Title>
-        <Card.Text style={{ fontFamily: 'IBM Plex Mono', fontSize: '1.3rem', color: '#2e2857' }}>
-          Some quick example text to build on the card title and make up the bulk of the card's content.
+        <Card.Text style={{ fontFamily: 'IBM Plex Mono', fontSize: '1.3rem', lineHeight:'1.3', color: '#2e2857', minHeight:'85px' }}>
+          {desc}
         </Card.Text>
         <Button href={link} target='_blank' variant='custom'>
           Link
@@ -21,10 +28,11 @@ const ProjectsCard = ({ img, title, link, repo, footer }) => {
         <Button href={repo} target='_blank' variant='custom'>
           Repo
         </Button>
-        <Card.Footer>
-          <Button size='sm' variant='custom-footer'>
+        <Card.Footer style={{height:'100%'}}>
+          {/* <Button size='sm' variant='custom-footer'>
             {footer}
-          </Button>
+          </Button> */}
+          {footerTools}
         </Card.Footer>
       </Card.Body>
     </Card>

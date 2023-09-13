@@ -10,17 +10,17 @@
     text-align: center;
     font-weight: 700;
     color: $accent-clr;
-    padding-bottom: 15px;
+    padding: 35px 0 15px;
     border-bottom: 2px solid $scd-accent-clr;
     box-shadow: 0 8px 6px -6px $scd-accent-clr;
   }
-  &__solo {
+  &__solo, &__team {
     align-items: top;
     margin: 25px auto 0;
     height: 500px;
     overflow-y: scroll;
     border-radius: 5px;
-    max-height: 420px;
+    max-height: 500px;
   }
 }
 

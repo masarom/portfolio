@@ -46,10 +46,16 @@
           text-decoration: none;
           color: $scd-clr;
           font-weight: 700;
+          &:hover {
+            color: $scd-accent-clr;
+          }
           @media all and (min-width: 768px) {
             padding: 4px 8px;
             border-radius: 5px;
             @include button-transition($scd-clr)
+            &:hover{
+              color: $scd-clr;
+            }
           }
           &--text {
             display: none;
