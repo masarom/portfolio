@@ -32,9 +32,21 @@ const Footer = () => {
         </nav>
       </section>
       <section className='footer__copy'>
-        <small>&copy;María Sánchez @masarom</small>
         <small>
-          <a href='https://www.vecteezy.com/free-vector/web-developer'>Web Developer Vectors by Vecteezy</a>
+          &copy; María Sánchez{' '}
+          <a href='https://github.com/masarom' className='footer__copy--link author'>
+            @masarom
+          </a>
+        </small>
+        <small>
+          <a
+            className='footer__copy--link ref'
+            href='https://www.vecteezy.com/free-vector/web-developer'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Web Developer Vectors by Vecteezy
+          </a>
         </small>
       </section>
     </footer>

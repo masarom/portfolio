@@ -1,10 +1,16 @@
 @import '../core/Var.scss';
 
 .footer {
-  height: 20vh;
+  height: 25vh;
   background-color: $scd-accent-clr;
   color: $dark-contrast;
-  padding: 20px;
+  padding: 20px 20px 5px;
+  margin-top: 35px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 15px;
+  height: 100%;
   &__menu {
     &--list {
       display: flex;
@@ -36,6 +42,28 @@
         &__icon {
           font-size: $main-txt-lg;
         }
+      }
+    }
+  }
+  &__copy {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: $smaller-txt-mbl;
+    gap: 10px;
+    &--link {
+      color: $dark-contrast;
+      text-decoration: none;
+      font-size: 0.8rem;
+      &:hover {
+        color: $primary-clr;
+      }
+      &.author {
+        font-size: $smaller-txt-mbl;
+      }
+      &.ref{
+        display: block;
       }
     }
   }

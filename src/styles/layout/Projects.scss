@@ -1,7 +1,8 @@
 // Override default variables before the import
-/* $body-bg: #000; */
 @import '../core/Var';
 @import '../core/Reset';
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap';
 
 .projects {
   &__link {
@@ -32,8 +33,8 @@
     font-weight: 700;
     color: $accent-clr;
     padding: 35px 0 15px;
-    border-bottom: 2px solid $scd-accent-clr;
-    box-shadow: 0 8px 6px -6px $scd-accent-clr;
+    border-bottom: 2px solid $primary-clr;
+    box-shadow: 0 8px 6px -6px $primary-clr;
   }
   &__nav{
     display: flex;
@@ -80,8 +81,7 @@
   }
 }
 
-// Import Bootstrap and its default variables
-@import '~bootstrap/scss/bootstrap';
+
 
 @keyframes projects-btn {
   0% {

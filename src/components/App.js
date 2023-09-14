@@ -8,12 +8,12 @@ import Footer from './Footer';
 function App() {
   return (
     <>
+      <Header />
       <Routes>
         <Route path='/' element={<Main />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/projects' element={<Main />}></Route>
       </Routes>
-      <Header />
       <Footer />
     </>
   );
