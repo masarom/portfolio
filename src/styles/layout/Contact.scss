@@ -1,0 +1,32 @@
+@import '../core/Var.scss';
+
+.contact {
+    height: 100vh;
+    padding-top: 100px;
+    &__title {
+        font-size: $title-mbl;
+    }
+    &__form {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        &--label {
+            width: 80%;
+            font-size: $subtitle-mbl;
+            padding: 5px 0;
+        }
+        &--input, &--textarea {
+            width: 80%;
+            border: 2px solid $scd-clr;
+            border-radius: 5px;
+            &::placeholder {
+                font-size: $main-txt-mbl;
+                padding: 2px 5px 0;
+            }
+        }
+        &--input {
+            height: 30px;
+            
+        }
+    }
+}

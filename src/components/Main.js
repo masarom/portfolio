@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import '../styles/layout/Main.scss';
 import MainHero from './MainHero';
 import Projects from './Projects';
