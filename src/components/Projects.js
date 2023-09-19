@@ -19,8 +19,10 @@ const Projects = () => {
         <Link to='#team'><button className='projects__nav--btn'>Adalab | Team Projects</button></Link>
       </section>
       <ProjectsPersonal />
-      <ProjectsSoloAdalab />
-      <ProjectsTeamAdalab />
+      <div className="container-flex">
+        <ProjectsSoloAdalab />
+        <ProjectsTeamAdalab />
+      </div>
     </section>
   );
 };

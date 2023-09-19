@@ -13,9 +13,9 @@ const ProjectsCard = ({ img, title, desc, link, repo, footer }) => {
       ))
   
   return (
-    <Card style={{ width: '26rem', margin: '10px auto'}}>
-      <Card.Img variant='top' src={img} style={{ maxWidth: '100%', height: 'auto', minHeight:'250px'}} />
-      <Card.Body style={{minHeight:'210px'}}>
+    <Card>
+      <Card.Img variant='top' src={img} />
+      <Card.Body style={{minHeight:'247px'}}>
         <Card.Title style={{ fontFamily: 'IBM Plex Mono', fontWeight: '700', fontSize: '1.8rem', color: '#d9610b', minHeight:'44px' }}>
           {title}
         </Card.Title>
@@ -29,9 +29,6 @@ const ProjectsCard = ({ img, title, desc, link, repo, footer }) => {
           Repo
         </Button>
         <Card.Footer style={{height:'100%'}}>
-          {/* <Button size='sm' variant='custom-footer'>
-            {footer}
-          </Button> */}
           {footerTools}
         </Card.Footer>
       </Card.Body>

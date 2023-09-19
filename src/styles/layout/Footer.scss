@@ -12,6 +12,10 @@
   gap: 15px;
   height: 100%;
   &__menu {
+    @media all and (min-width: 768px) {
+      max-width: 1024px;
+      margin: 0 auto;
+    }
     &--list {
       display: flex;
       flex-flow: column wrap;
@@ -55,16 +59,32 @@
     &--link {
       color: $dark-contrast;
       text-decoration: none;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       &:hover {
         color: $primary-clr;
       }
       &.author {
         font-size: $smaller-txt-mbl;
       }
-      &.ref{
+      &.ref {
         display: block;
       }
+    }
+  }
+  &__arrow {
+    position: absolute;
+    right: 20px;
+    transform: translateY(-78px);
+    background-color: $primary-clr;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: $main-txt-lg;
+    &--link {
+      text-decoration: none;
+      color: $dark-contrast;
     }
   }
 }

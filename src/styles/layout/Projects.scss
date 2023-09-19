@@ -5,6 +5,13 @@
 @import '~bootstrap/scss/bootstrap';
 
 .projects {
+  & .container-flex {
+    @media all and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+  }
   &__link {
     text-align: center;
     font-size: $subtitle-mbl;
@@ -36,22 +43,24 @@
     border-bottom: 2px solid $primary-clr;
     box-shadow: 0 8px 6px -6px $primary-clr;
   }
-  &__nav{
+  &__nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: column nowrap;
-    gap:10px;
-    @media all and (min-width:768px) {
+    gap: 10px;
+    @media all and (min-width: 768px) {
       flex-flow: row wrap;
     }
-    &--btn{
+    &--btn {
       padding: 5px 5px;
       font-size: $subtitle-mbl;
       background-color: $scd-accent-clr;
       color: $dark-contrast;
       border: 2px solid $scd-accent-clr;
       border-radius: 5px;
+      width: 250px;
+      height: 50px;
       &:hover {
         background-color: $scd-clr;
         border-color: $scd-clr;
@@ -61,12 +70,12 @@
   }
   &__solo,
   &__team {
+    width: 50%;
     align-items: top;
     margin: 25px auto 0;
-    height: 500px;
+    min-height: 540px;
     overflow-y: scroll;
     border-radius: 5px;
-    max-height: 500px;
   }
   &__more {
     font-size: $title-mbl;
@@ -74,14 +83,35 @@
     color: $primary-clr;
     text-align: center;
     padding: 15px 0;
+    height: 503px;
+    line-height: 503px;
+  }
+  &__carousel {
     @media all and (min-width: 768px) {
-      height: 503px;
-      line-height: 503px;
+      width: 370px;
+      margin: auto;
+    }
+    & .carousel-inner {
+      min-height: 550px;
+      @media all and (min-width: 768px){
+      min-height: 560px;}
+      
+    }
+    & .carousel-indicators {
+      background-color: $primary-clr;
+      border-radius: 5px;
+    }
+    & .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+      display: inline-block;
+      background-color: $primary-clr;
+      border-radius: 50%;
+      border: 5px solid $primary-clr;
+      width: 35px;
+      height: 35px;
     }
   }
 }
-
-
 
 @keyframes projects-btn {
   0% {

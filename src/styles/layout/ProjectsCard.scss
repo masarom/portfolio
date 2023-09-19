@@ -5,7 +5,21 @@
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap';
-
+.card {
+  width: 205px;
+  margin: 15px auto;
+  @media all and (min-width:768px){
+    width: 270px;
+    &-img-top {
+      min-height: 200px;
+      max-width: '100%';
+      height: 'auto';
+    }
+    &-body {
+      min-height: 210px;
+    }
+  }
+}
 .btn-custom {
   background-color: $scd-accent-clr;
   border-color: $scd-accent-clr;
