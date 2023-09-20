@@ -1,0 +1,31 @@
+@import '../core/Var';
+
+.notfound {
+  min-height: 75vh;
+  margin-top: 100px;
+  text-align: center;
+  font-family: $primary-font;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__text {
+    color: $primary-clr;
+    font-weight: 700;
+  }
+  &__link {
+    display: inline-block;
+    font-size: $main-txt-mbl;
+    color: $dark-contrast;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 5px 0;
+    padding: 5px 7px;
+    border-radius: 5px;
+    background-color: $accent-clr;
+    &:hover {
+        background-color: $scd-accent-clr;
+        transition: 0.4s;
+    }
+  }
+}
