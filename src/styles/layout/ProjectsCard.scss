@@ -1,6 +1,6 @@
 @import '../core/Var';
 @import '../core/Reset';
-@import '~bootstrap/scss/bootstrap';
+
 .card {
   width: 205px;
   margin: 15px auto;
@@ -16,7 +16,7 @@
     }
   }
 }
-.btn-custom {
+div > .btn-custom {
   background-color: $scd-accent-clr;
   border-color: $scd-accent-clr;
   color: $dark-contrast;

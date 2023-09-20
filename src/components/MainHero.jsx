@@ -6,7 +6,7 @@ const MainHero = () => {
     <section className='main__hero'>
       <section className='main__hero--text'>
         <h1 className='title'>
-          <span className='title--accent'>Front-end developer</span> soon-to-be Full-Stack developer
+          <span className='title--accent'>Front-end developer</span> learning a bit more everyday
         </h1>
         <h2 className='intro'>
           Welcome! I am <span className='intro--accent'>María Sánchez</span>, a passionate web developer based in Madrid

@@ -9,7 +9,6 @@ const ProjectsCard = ({ img, title, desc, link, repo, footer }) => {
           {eachTool}
         </Button>
       ))
-  
   return (
     <Card>
       <Card.Img variant='top' src={img} />
