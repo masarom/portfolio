@@ -29,9 +29,15 @@ const MainHero = () => {
           </a>
           .
         </p>
-        <p className='paragraph'>Check all my past and present projects <Link to='/#projects' className='paragraph--link'>below</Link> 🚀</p>
+        <p className='paragraph'>
+          Check all my past and present projects{' '}
+          <Link to='/#projects' className='paragraph--link'>
+            below
+          </Link>{' '}
+          🚀
+        </p>
       </section>
-      <section className="technologies">
+      <section className='technologies'>
         <section className='main__hero--tech'>
           <h2 className='tech__title'>
             <span className='tech__title--decoration'>{'# '}</span>My Tech stack:

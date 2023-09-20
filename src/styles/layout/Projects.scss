@@ -1,10 +1,9 @@
-// Override default variables before the import
 @import '../core/Var';
 @import '../core/Reset';
-// Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap';
 
 .projects {
+  font-family:$primary-font;
   & .container-flex {
     @media all and (min-width: 768px) {
       display: flex;
@@ -59,7 +58,7 @@
       color: $dark-contrast;
       border: 2px solid $scd-accent-clr;
       border-radius: 5px;
-      width: 250px;
+      width: 255px;
       height: 50px;
       &:hover {
         background-color: $scd-clr;

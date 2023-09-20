@@ -4,7 +4,7 @@ import ProjectsCard from './ProjectsCard';
 import ImgTeam4 from '../images/projects/layout-cleopatra.png';
 import ImgTeam3 from '../images/projects/awesone-profile-cards.png';
 import ImgTeam2 from '../images/projects/awesome-projects-react.png';
-import ImgTeam1 from '../images/projects/townsville-projects.png'
+import ImgTeam1 from '../images/projects/townsville-projects.png';
 
 const ProjectsTeamAdalab = () => {
   return (
@@ -13,14 +13,14 @@ const ProjectsTeamAdalab = () => {
       <div className='projects__carousel'>
         <Carousel fade>
           <Carousel.Item interval={5000}>
-              <ProjectsCard
-                img={ImgTeam1}
-                title='Townsville needs you!'
-                desc='The successor of the Awesome Projects Database, containing the fornt-end AND back-end of the project, using the PowerPuff Girls theme'
-                link='https://project-promo-t-module-4-team-4.onrender.com/'
-                repo='https://github.com/masarom/rick-morty-database-react'
-                footer={['React', 'NodeJS', 'Express']}
-              />
+            <ProjectsCard
+              img={ImgTeam1}
+              title='Townsville needs you!'
+              desc='The successor of the Awesome Projects Database, containing the fornt-end AND back-end of the project, using the PowerPuff Girls theme'
+              link='https://project-promo-t-module-4-team-4.onrender.com/'
+              repo='https://github.com/masarom/rick-morty-database-react'
+              footer={['React', 'NodeJS', 'Express']}
+            />
           </Carousel.Item>
           <Carousel.Item interval={5000}>
             <ProjectsCard

@@ -1,12 +1,14 @@
-import { NavLink } from 'react-router-dom';
 import '../styles/layout/Footer.scss';
+import { NavLink } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
 const Footer = () => {
   return (
     <footer className='footer'>
       <div className='footer__arrow'>
-        <Link className='footer__arrow--link' to='#home'><i className='fa-solid fa-arrow-up'></i></Link>
+        <Link className='footer__arrow--link' to='#home'>
+          <i className='fa-solid fa-arrow-up'></i>
+        </Link>
       </div>
       <section className='footer__menu'>
         <nav>

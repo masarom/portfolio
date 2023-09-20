@@ -1,5 +1,3 @@
-import '../styles/core/Var.scss';
-import "../styles/layout/Projects.scss";
 import '../styles/layout/ProjectsCard.scss';
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";

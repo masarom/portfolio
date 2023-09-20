@@ -1,7 +1,7 @@
 @import '../core/Var.scss';
 
 .footer {
-  height: 25vh;
+  max-height: 30vh;
   background-color: $scd-accent-clr;
   color: $dark-contrast;
   padding: 20px 20px 5px;
@@ -10,7 +10,6 @@
   flex-flow: column nowrap;
   justify-content: center;
   gap: 15px;
-  height: 100%;
   &__menu {
     @media all and (min-width: 768px) {
       max-width: 1024px;
@@ -55,7 +54,6 @@
     display: flex;
     flex-flow: column nowrap;
     font-size: $smaller-txt-mbl;
-    gap: 10px;
     &--link {
       color: $dark-contrast;
       text-decoration: none;
@@ -67,14 +65,14 @@
         font-size: $smaller-txt-mbl;
       }
       &.ref {
-        display: block;
+        display: inline-block;
       }
     }
   }
   &__arrow {
     position: absolute;
     right: 20px;
-    transform: translateY(-78px);
+    transform: translateY(-85px);
     background-color: $primary-clr;
     border-radius: 50%;
     width: 30px;

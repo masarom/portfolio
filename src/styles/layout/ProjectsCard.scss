@@ -1,9 +1,5 @@
-// Override default variables before the import
-/* $body-bg: #000; */
 @import '../core/Var';
 @import '../core/Reset';
-
-// Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap';
 .card {
   width: 205px;

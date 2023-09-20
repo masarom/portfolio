@@ -11,7 +11,7 @@ const ProjectsAdalab = () => {
   return (
     <section id='solo'>
       <h2 className='projects__title'>Adalab Bootcamp Solo Projects</h2>
-      <div className="projects__carousel">
+      <div className='projects__carousel'>
         <Carousel fade>
           <Carousel.Item interval={5000}>
             <ProjectsCard

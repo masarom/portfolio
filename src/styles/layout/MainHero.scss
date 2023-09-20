@@ -1,8 +1,9 @@
 @import '../core/Var';
-/* TECH STACK ICONS */
+@import '../core/Reset.scss';
 
 .main {
   &__hero {
+    font-family: $primary-font;
     min-height: 80vh;
     width: 100%;
     background-image: url(../../images/hero4.png);
@@ -17,20 +18,21 @@
       background-size: 360px;
     }
     &--text {
-      text-align: center;
-      color: $primary-clr;
-      padding-top: 260px;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       margin: 0 10px;
       font-weight: 700;
+      color: $primary-clr;
+      text-align: center;
+      padding-top: 260px;
       @media all and (min-width: 768px) {
         height: 330px;
         padding: 0 15px 0 375px;
       }
       & .title {
         font-size: $title-mbl;
+        font-weight: 700;
         &--accent {
           color: $accent-clr;
         }
@@ -41,6 +43,7 @@
       & .intro {
         margin: 15px 0;
         font-size: $subtitle-mbl;
+        font-weight: 700;
         line-height: 1.5;
         &--accent {
           color: $scd-clr;
@@ -60,27 +63,29 @@
           color: $accent-clr;
         }
       }
-      & .paragraph{
-      &:last-of-type {
-        padding-top: 20px;
-        text-align: center;
-        color: $scd-clr;
-        font-weight: 600;
-      }
-      &--link{
-        color: $accent-clr;
-        &:hover {
-          color: $scd-accent-clr;
+      & .paragraph {
+        &:last-of-type {
+          padding-top: 20px;
+          text-align: center;
+          color: $scd-clr;
+          font-weight: 600;
+        }
+        &--link {
+          color: $accent-clr;
+          &:hover {
+            color: $scd-accent-clr;
+          }
         }
       }
-    }
       @media all and (min-width: 768px) {
         font-size: $main-txt-lg;
       }
     }
-    &--tech, &--learn {
+    &--tech,
+    &--learn {
       margin: 25px 15px;
-      & .tech__title, .learn__title {
+      & .tech__title,
+      .learn__title {
         padding-bottom: 10px;
         color: $primary-clr;
         font-size: $subtitle-mbl;
@@ -132,19 +137,19 @@
     & .technologies {
       display: flex;
       flex-flow: column nowrap;
-      @media all and (min-width: 768px){
+      @media all and (min-width: 768px) {
         flex-flow: row nowrap;
       }
     }
     &--tech {
       @media all and (min-width: 768px) {
-            width: 60%;
-          }
+        width: 60%;
+      }
     }
     &--learn {
       @media all and (min-width: 768px) {
-            width: 35%;
-          }
+        width: 35%;
+      }
     }
     .line--through {
       margin-top: 45px;
@@ -165,4 +170,3 @@
     transform: translateY(0);
   }
 }
-
