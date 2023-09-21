@@ -2,7 +2,7 @@
   "solo": [
     {
       "id": 1,
-      "img": "/projects/rick-morty-react-2.png",
+      "img": "projects/rick-morty-react-2.png",
       "title": "Rick & Morty Database",
       "desc": "Web app using Rick & Morty characters' API developed with React",
       "link": "https://masarom.github.io/rick-morty-database-react/",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "img": "/projects/friends-database-react.png",
+      "img": "projects/friends-database-react.png",
       "title": "Friends Sentence Database",
       "desc": "Web app using Friends sentences' API developed with React",
       "link": "https://masarom.github.io/friends-sentence-database-react/",
@@ -20,7 +20,7 @@
     },
     {
       "id": 3,
-      "img": "/projects/disney-database-javascript.png",
+      "img": "projects/disney-database-javascript.png",
       "title": "Disney Characters Database",
       "desc": "Web developed using the Disney Characters' API with JavaScript",
       "link": "https://masarom.github.io/disney-database-javascript/",
@@ -29,7 +29,7 @@
     },
     {
       "id": 4,
-      "img": "/projects/dice-bet-javascript.png",
+      "img": "projects/dice-bet-javascript.png",
       "title": "Dice and Bet Game",
       "desc": "Game developed with JavaScript: player chooses a number from 1 to 6 which must match the random number chosen by the game",
       "link": "https://masarom.github.io/dice-bet-javascript/",
@@ -38,7 +38,7 @@
     },
     {
       "id": 5,
-      "img": "/projects/layout-gulp.png",
+      "img": "projects/layout-gulp.png",
       "title": "Layout Project",
       "desc": "First layout challenge, building a page using Flexbox, Grid, Gulp, SASS, and other tools",
       "link": "https://masarom.github.io/layout-project-gulp/",
@@ -49,7 +49,7 @@
   "team": [
     {
       "id": 6,
-      "img": "/projects/townsville-projects.png",
+      "img": "projects/townsville-projects.png",
       "title": "Townsville needs you!",
       "desc": "The successor of the Awesome Projects Database, containing the fornt-end AND back-end of the project, using the PowerPuff Girls theme",
       "link": "https://project-promo-t-module-4-team-4.onrender.com/",
@@ -58,7 +58,7 @@
     },
     {
       "id": 7,
-      "img": "/projects/awesome-projects-react.png",
+      "img": "projects/awesome-projects-react.png",
       "title": "Awesome Projects Database",
       "desc": "Tech projects' database web app that collects information from the user through a form, using React",
       "link": "https://masarom.github.io/awesome-projects-database-react/",
@@ -67,7 +67,7 @@
     },
     {
       "id": 8,
-      "img": "/projects/awesone-profile-cards.png",
+      "img": "projects/awesone-profile-cards.png",
       "title": "Awesome Profile Cards",
       "desc": "Project about building a profile card creator using JavaScript",
       "link": "https://masarom.github.io/awesome-profile-cards-javascript/",
@@ -76,7 +76,7 @@
     },
     {
       "id": 9,
-      "img": "/projects/layout-cleopatra.png",
+      "img": "projects/layout-cleopatra.png",
       "title": "Team Web - Cleopatra's Digital Empire",
       "desc": "Layout team challenge, building a team presentation page using Gulp",
       "link": "https://masarom.github.io/layout-teamwork-cleopatra-digital-empire/",
@@ -87,7 +87,7 @@
   "personal": [
     {
       "id": "10",
-      "img": "/projects/cooking-recipes.png",
+      "img": "projects/cooking-recipes.png",
       "title": "'Otro Poquito': Cooking recipes",
       "desc": "Personal project that includes the recipes that my mother learned from her mother, and her mother from her mother, and so on 💜",
       "link": "https://masarom.github.io/cooking-recipes/",
