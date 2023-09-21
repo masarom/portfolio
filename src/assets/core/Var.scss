@@ -1,0 +1,46 @@
+/* COLORS */
+$primary-clr: hsl(248, 37%, 25%);
+$scd-clr: #a72be9;
+//$scd-clr: #906aa4;
+$accent-clr: #d9610b;
+//$accent-clr: #da9768;
+$scd-accent-clr: #6573af;
+$dark-contrast: white;
+
+/* FONTS */
+$primary-font: 'IBM Plex Mono', monospace;
+
+/* SIZES */
+$title-mbl: 2.5rem;
+$title-tb: 3rem;
+$subtitle-mbl: 1.8rem;
+$subtitle-tb: 2rem;
+$main-txt-mbl: 1.5rem;
+$main-txt-lg: 1.8rem;
+$small-txt-mbl: 1.2rem;
+$smaller-txt-mbl: 1rem;
+
+/* TECH STACK ICONS */
+$stack-icons: (
+  1: '../../assets/tech-stack/html5-original-wordmark.svg',
+  2: '../../assets/tech-stack/css3-original-wordmark.svg',
+  3: '../../assets/tech-stack/sass-original.svg',
+  4: '../../assets/tech-stack/git.svg',
+  5: '../../assets/tech-stack/gulp-plain.svg',
+  6: '../../assets/tech-stack/javascript-original.svg',
+  7: '../../assets/tech-stack/react-original-wordmark.svg',
+  8: '../../assets/tech-stack/jest.svg',
+  9: '../../assets/tech-stack/bootstrap-plain-wordmark.svg',
+  10: '../../assets/tech-stack/mysql-original-wordmark.svg',
+  11: '../../assets/tech-stack/nodejs-original-wordmark.svg',
+  12: '../../assets/tech-stack/express-original-wordmark.svg',
+  13: '../../assets/tech-stack/postman.svg',
+  14: '../../assets/tech-stack/mongodb-original-wordmark.svg',
+  15: '../../assets/tech-stack/figma.svg',
+);
+/* LEARNING ICONS */
+$learn-icons: (
+  1: '../../assets/tech-stack/typescript-original.svg',
+  2: '../../assets/tech-stack/jest.svg',
+  3: '../../assets/tech-stack/react-original-wordmark.svg',
+);

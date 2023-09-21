@@ -1,0 +1,131 @@
+@import '../../assets/core/Var';
+@import '../../assets/core/Reset';
+
+
+.projects {
+  font-family:$primary-font;
+  & .container-flex {
+    @media all and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+  }
+  &__link {
+    text-align: center;
+    font-size: $subtitle-mbl;
+    font-weight: 700;
+    padding: 30px 0;
+    animation: projects-btn 3s linear 2s infinite normal none;
+    color: $primary-clr;
+    &--title {
+      cursor: pointer;
+      & span {
+        color: transparent;
+        margin-left: -20px;
+      }
+      &:hover {
+        color: $accent-clr;
+      }
+      &:hover span {
+        color: $accent-clr;
+      }
+    }
+  }
+  margin: 0 10px;
+  &__title {
+    font-size: $title-mbl;
+    text-align: center;
+    font-weight: 700;
+    color: $accent-clr;
+    padding: 35px 0 15px;
+    border-bottom: 2px solid $primary-clr;
+    box-shadow: 0 8px 6px -6px $primary-clr;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 10px;
+    @media all and (min-width: 768px) {
+      flex-flow: row wrap;
+    }
+    &--btn {
+      padding: 5px 5px;
+      font-size: $subtitle-mbl;
+      background-color: $scd-accent-clr;
+      color: $dark-contrast;
+      border: 2px solid $scd-accent-clr;
+      border-radius: 5px;
+      width: 255px;
+      height: 50px;
+      &:hover {
+        background-color: $scd-clr;
+        border-color: $scd-clr;
+        transition: 0.3s;
+      }
+    }
+  }
+  &__solo,
+  &__team {
+    width: 50%;
+    align-items: top;
+    margin: 25px auto 0;
+    min-height: 540px;
+    overflow-y: scroll;
+    border-radius: 5px;
+  }
+  &__more {
+    font-size: $title-mbl;
+    font-weight: 700;
+    color: $primary-clr;
+    text-align: center;
+    padding: 15px 0;
+    height: 503px;
+    line-height: 503px;
+  }
+  &__carousel {
+    @media all and (min-width: 768px) {
+      width: 370px;
+      margin: auto;
+    }
+    & .carousel-inner {
+      min-height: 550px;
+      @media all and (min-width: 768px){
+      min-height: 560px;}
+      
+    }
+    & .carousel-indicators {
+      background-color: $primary-clr;
+      border-radius: 5px;
+    }
+    & .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+      display: inline-block;
+      background-color: $primary-clr;
+      border-radius: 50%;
+      border: 5px solid $primary-clr;
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+@keyframes projects-btn {
+  0% {
+    transform: translateY(0);
+  }
+  5% {
+    transform: translateY(-7px);
+  }
+  12% {
+    transform: translateY(2px);
+  }
+  17% {
+    transform: translateY(-7px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+}

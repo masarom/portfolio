@@ -1,0 +1,29 @@
+@import '../../assets/core/Var';
+@import '../../assets/core/Reset';
+
+
+.projects__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 10px;
+    @media all and (min-width: 768px) {
+      flex-flow: row wrap;
+    }
+    &--btn {
+      padding: 5px 5px;
+      font-size: $subtitle-mbl;
+      background-color: $scd-accent-clr;
+      color: $dark-contrast;
+      border: 2px solid $scd-accent-clr;
+      border-radius: 5px;
+      width: 255px;
+      height: 50px;
+      &:hover {
+        background-color: $scd-clr;
+        border-color: $scd-clr;
+        transition: 0.3s;
+      }
+    }
+  }
