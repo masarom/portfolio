@@ -42,31 +42,6 @@
     border-bottom: 2px solid $primary-clr;
     box-shadow: 0 8px 6px -6px $primary-clr;
   }
-  &__nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: column nowrap;
-    gap: 10px;
-    @media all and (min-width: 768px) {
-      flex-flow: row wrap;
-    }
-    &--btn {
-      padding: 5px 5px;
-      font-size: $subtitle-mbl;
-      background-color: $scd-accent-clr;
-      color: $dark-contrast;
-      border: 2px solid $scd-accent-clr;
-      border-radius: 5px;
-      width: 255px;
-      height: 50px;
-      &:hover {
-        background-color: $scd-clr;
-        border-color: $scd-clr;
-        transition: 0.3s;
-      }
-    }
-  }
   &__solo,
   &__team {
     width: 50%;
