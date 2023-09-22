@@ -1,6 +1,5 @@
 import { HashLink as Link } from 'react-router-hash-link';
 import './ProjectsNav.scss';
-
 const ProjectsNav = () => {
   return (
     <section className='projects__nav'>
